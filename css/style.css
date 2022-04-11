@@ -167,7 +167,7 @@ h4 {
   margin: 0 auto;
 }
 .about-text {
-  width: 550px;
+  width: 600px;
 }
 .imageClass img {
   width: 50%;
@@ -188,10 +188,10 @@ h4 {
 }
 .about-text p {
   color: whitesmoke;
-  letter-spacing: 1.5px;
-  line-height: 20px;
+  line-height: 30px;
   font-size: 25px;
   margin-bottom: 45px;
+  font-family: 'Gill Sans';
 }
 button {
   background-color: dodgerblue;
@@ -217,8 +217,7 @@ button:hover {
 }
 .title h2 {
   color: dodgerblue;
-  font-size: 75px;
-  /* width: 1130px; */
+  font-size: 50px;
   margin: 30px auto;
   text-align: center;
 }
@@ -239,6 +238,7 @@ button:hover {
   position: relative;
   overflow: hidden;
   text-align: center;
+
 }
 .card i {
   font-size: 50px;
@@ -253,8 +253,8 @@ h5 {
   margin-bottom: 15px;
 }
 .pra p {
-  color: #fee7aa;
-  font-size: 16px;
+  color: white;
+  font-size: 25px;
   line-height: 27px;
   margin-bottom: 25px;
 }
@@ -324,9 +324,9 @@ footer p:nth-child(2) {
   font-size: 14px;
 }
 
-h2 {
+/* h2 {
   text-align: left;
-}
+} */
 p {
   font-size: 14px;
   font-weight: 100;
@@ -515,17 +515,25 @@ button.ghost {
 .section-contact {
   min-height: 100vh;
   background-color: black;
+  justify-content: center;
+  align-items: center;
 }
 .contact-center {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr;
   gap: 3rem;
   color: white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 250px;
+  padding-right: 250px;
+
 }
 .title h1 {
   color: dodgerblue;
   font-size: 35px;
   padding-top: 40px;
+  justify-content: center;
+  align-items: center;
 }
 .left h2 {
   font-size: 2.5rem;
@@ -534,14 +542,20 @@ button.ghost {
   font-size: 1.6rem;
   margin-bottom: 2rem;
   color: white;
+  justify-content: center;
+  align-items: center;
 }
 .left div {
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 .left div .content {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .left .icon {
   margin-right: 2rem;
@@ -551,6 +565,9 @@ button.ghost {
 .form h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: dodgerblue;
+  align-items: center;
+  text-align: center;
 }
 .form input,
 .form textarea {
@@ -564,6 +581,8 @@ button.ghost {
   outline: none;
   border: none;
   border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
 }
 .form .right div {
   display: flex;
@@ -694,9 +713,9 @@ button.ghost {
   min-height: 400px;
   flex-wrap: wrap;
 }
-.cards {
-  height: 600px;
-  width: 335px;
+.card {
+  height: 400px;
+  width: 384px;
   padding: 20px 35px;
   background: #191919;
   border-radius: 20px;
@@ -704,6 +723,7 @@ button.ghost {
   position: relative;
   overflow: hidden;
   text-align: center;
+
 }
 .cards img {
   font-size: 50px;
@@ -719,9 +739,13 @@ h5 {
 }
 .prag p {
   color: #fee7aa;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 27px;
   margin-bottom: 25px;
+}
+.card h5{
+  color:dodgerblue;
+  font-size: 28px;
 }
 .cards .button {
   background-color: dodgerblue;

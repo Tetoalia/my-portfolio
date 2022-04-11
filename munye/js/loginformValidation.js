@@ -40,8 +40,8 @@ signInbtn.addEventListener('click', (e) => {
     return false;
   }else {
     error3.innerHTML = ''
-    
   }
+  
   // const localUser = localUsers.find(u => u.email === mail);
   // console.log(localUser);
   // if(localUser === undefined){
@@ -58,6 +58,7 @@ signInbtn.addEventListener('click', (e) => {
     error4.innerHTML = ''
     
   } 
+  window.location.href="/admin.html"
   // if(signinPassword.value !== localUser.password){
   //   error4.innerHTML = "Invalid  Password"
   //   return false
@@ -66,65 +67,65 @@ signInbtn.addEventListener('click', (e) => {
   //   location.href = "./munye/js/admin.html";
 
   // }
+})
 
+// fetch('https://striker-server.herokuapp.com/api/v1/user/login', {
 
-fetch('https://striker-server.herokuapp.com/api/v1/user/login', {
-
-    method: 'POST',
-    mode: 'no cors',
-    headers: {
-      'content-Type': 'application/json',
-      'Access-Control-Cross-Origin': '*',
-    },
-    body: JSON.stringify({
-      email: signinEmail.value.trim(),
-      password: signinPassword.value.trim(),
-    })
-  })
-    .then(res => {
-      email === null;
-      password === null;
-      return res.json();
-    })
-    .then(data => {
-       if (!signinEmail.value) {
-         error3.innerHTML = "Please add your email";
-         return false;
-       } else {
-         error3.innerHTML = "";
-       }
-       let mail = signinEmail.value.trim();
-       if (mail.length < 5) {
-         error3.innerHTML = "Email is too short";
-         return false;
-       } else {
-         error3.innerHTML = "";
-       }
-       const localUser = localUsers.find((u) => u.email === mail);
-       console.log(localUser);
-       if (localUser === undefined) {
-         error3.innerHTML = "Email not found!";
-         return false;
-       } else {
-         error3.innerHTML = "";
-       }
-       if (signinPassword.value.length < 6) {
-         error4.innerHTML = "Please add the password";
-         return false;
-       } else {
-         error4.innerHTML = "";
-       }
-       if (signinPassword.value !== localUser.password) {
-         error4.innerHTML = "Invalid  Password";
-         return false;
-       } else {
-         error4.innerHTML = "";
-         location.href = "./munye/js/admin.html";
-       }
-    })
+//     method: 'POST',
+//     mode: 'no cors',
+//     headers: {
+//       'content-Type': 'application/json',
+//       'Access-Control-Cross-Origin': '*',
+//     },
+//     body: JSON.stringify({
+//       email: signinEmail.value.trim(),
+//       password: signinPassword.value.trim(),
+//     })
+//   })
+//     .then(res => {
+//       email === null;
+//       password === null;
+//       return res.json();
+//     })
+//     .then(data => {
+//        if (!signinEmail.value) {
+//          error3.innerHTML = "Please add your email";
+//          return false;
+//        } else {
+//          error3.innerHTML = "";
+//        }
+//        let mail = signinEmail.value.trim();
+//        if (mail.length < 5) {
+//          error3.innerHTML = "Email is too short";
+//          return false;
+//        } else {
+//          error3.innerHTML = "";
+//        }
+//        const localUser = localUsers.find((u) => u.email === mail);
+//        console.log(localUser);
+//        if (localUser === undefined) {
+//          error3.innerHTML = "Email not found!";
+//          return false;
+//        } else {
+//          error3.innerHTML = "";
+//        }
+//        if (signinPassword.value.length < 6) {
+//          error4.innerHTML = "Please add the password";
+//          return false;
+//        } else {
+//          error4.innerHTML = "";
+//        }
+//        if (signinPassword.value !== localUser.password) {
+//          error4.innerHTML = "Invalid  Password";
+//          return false;
+//        } else {
+//          error4.innerHTML = "";
+//          location.href = "./munye/js/admin.html";
+//        }
+//     })
 
     
-})
+// })
 
 /////////////////////////////////////////// SIGN UP ///////////////////
 // const names = document.querySelector("#name2")
