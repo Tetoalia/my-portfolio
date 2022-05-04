@@ -238,6 +238,8 @@ button:hover {
   position: relative;
   overflow: hidden;
   text-align: center;
+  color: white;
+  font-family: 'Gill Sans';
 
 }
 .card i {
@@ -690,6 +692,8 @@ button.ghost {
 
    background-color: black;
    min-height: 100vh;
+   margin-bottom: 20px;
+   margin-left: 20px;
 }
 .blog h2{
    color: dodgerblue;
@@ -725,6 +729,20 @@ button.ghost {
   text-align: center;
 
 }
+.cards h5{
+  color:dodgerblue;
+}
+.cards {
+  height: 650px;
+  width: 384px;
+  padding: 20px 35px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
 .cards img {
   font-size: 50px;
   display: block;
@@ -738,10 +756,11 @@ h5 {
   margin-bottom: 15px;
 }
 .prag p {
-  color: #fee7aa;
+  color: white;
   font-size: 25px;
   line-height: 27px;
   margin-bottom: 25px;
+  font-family: 'Gill Sans';
 }
 .card h5{
   color:dodgerblue;
